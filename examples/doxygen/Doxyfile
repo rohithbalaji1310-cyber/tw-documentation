@@ -1,0 +1,13 @@
+# Minimal Doxygen configuration (run `doxygen -g` for the full template)
+PROJECT_NAME           = "Calculator Library"
+PROJECT_BRIEF          = "Example project for the TW course"
+OUTPUT_DIRECTORY       = .
+INPUT                  = src
+FILE_PATTERNS          = *.c *.h
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HAVE_DOT               = NO
+SOURCE_BROWSER         = YES

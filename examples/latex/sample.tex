@@ -1,0 +1,77 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\title{Sample Technical Report}
+\author{Rohith Balaji}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+This document demonstrates common \LaTeX{} features: \textbf{bold}, \textit{italic},
+lists, tables, equations, code listings and cross-references.
+
+\section{Lists}
+\begin{itemize}
+  \item Version control with Git
+  \item Typesetting with \LaTeX
+\end{itemize}
+\begin{enumerate}
+  \item Write
+  \item Compile
+  \item Publish
+\end{enumerate}
+
+\section{Mathematics}
+Inline: $a^2 + b^2 = c^2$. Display equation:
+\begin{equation}\label{eq:gauss}
+  \int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
+\end{equation}
+Equation~\ref{eq:gauss} is the Gaussian integral.
+
+\begin{align}
+  (a+b)^2 &= a^2 + 2ab + b^2 \\
+  \sum_{i=1}^{n} i &= \frac{n(n+1)}{2}
+\end{align}
+
+\section{Tables}
+\begin{table}[h]
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Tool & Type & Output \\
+    \midrule
+    LaTeX   & Typesetting & PDF \\
+    Doxygen & Doc generator & HTML/PDF \\
+    Git     & VCS & Repository \\
+    \bottomrule
+  \end{tabular}
+  \caption{Tools covered in the course}\label{tab:tools}
+\end{table}
+See Table~\ref{tab:tools}.
+
+\section{Code Listing}
+\begin{lstlisting}[language=C, frame=single]
+#include <stdio.h>
+int main(void) {
+    printf("Hello, World!\n");
+    return 0;
+}
+\end{lstlisting}
+
+\section{Conclusion}
+\LaTeX{} produces high-quality documents~\cite{lamport94}.
+
+\begin{thebibliography}{9}
+  \bibitem{lamport94} L.~Lamport, \emph{\LaTeX: A Document Preparation System}, 2nd ed., Addison-Wesley, 1994.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\usepackage[utf8]{inputenc}
+
+\title{Tools for Technical Writing}
+\subtitle{LaTeX, Beamer, Doxygen, Git \& GitHub}
+\author{Rohith Balaji}
+\institute{MNIT Jaipur}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Typesetting}
+\begin{frame}{Why LaTeX?}
+  \begin{itemize}
+    \item<1-> High-quality typography
+    \item<2-> Excellent mathematics
+    \item<3-> Automatic references and bibliographies
+  \end{itemize}
+  \uncover<4->{
+    \begin{block}{Remember}
+      Plain-text source works great with Git.
+    \end{block}
+  }
+\end{frame}
+
+\begin{frame}{Maths Example}
+  \begin{equation*}
+    e^{i\pi} + 1 = 0
+  \end{equation*}
+  \begin{alertblock}{Euler's identity}
+    Often called the most beautiful equation in mathematics.
+  \end{alertblock}
+\end{frame}
+
+\section{Code Documentation}
+\begin{frame}[fragile]{Doxygen Comment}
+\begin{verbatim}
+/**
+ * @brief Adds two integers.
+ * @param a First number
+ * @param b Second number
+ * @return Sum of a and b
+ */
+int add(int a, int b);
+\end{verbatim}
+\end{frame}
+
+\section{Version Control}
+\begin{frame}{Git vs GitHub}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \textbf{Git}
+      \begin{itemize}
+        \item Local tool
+        \item Tracks changes
+      \end{itemize}
+    \column{0.5\textwidth}
+      \textbf{GitHub}
+      \begin{itemize}
+        \item Online hosting
+        \item Pull requests, issues
+      \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Thank You}
+  \centering
+  \Large Questions?
+\end{frame}
+
+\end{document}
